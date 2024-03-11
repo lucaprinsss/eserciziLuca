@@ -3,12 +3,13 @@
 let scores = [20, -5, -1, 100, -3, 30, 50];
 let scoresNN = []; //scoresNoNegative
 
+//rimuovo valori negativi
+
 for (let num of scores){
     if (num >= 0)
         scoresNN.push(num);  
 }
-
-let NN = scores.length - scoresNN.length; //number of negative value removed
+let NN = scores.length - scoresNN.length; //number of negative values removed
 
 //per rimuovere i due valori più bassi, 
 //ordino l'array in maniera crescente e rimuovo il primo valore due volte
