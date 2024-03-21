@@ -12,7 +12,9 @@ db.all(sql, (err, rows) => {
     if (err) throw err;
     for (let row of rows) 
         results.push(row);
+    console.log('Array result riempito');
 });
 
 for (let r of results)
-    console.log(r);
+    console.log('Risulato: ' + r);
+console.log('Ho stampato result');
