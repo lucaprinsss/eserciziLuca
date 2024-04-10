@@ -1,5 +1,5 @@
-footer {
+.footer {
     background-color: blueviolet;
     position: absolute;
-    bottom: 0;
+    bottom: 0;  /*Non va bene! Lo posiziona a fondo della schermata, non a fondo pagina*/
 }
