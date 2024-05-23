@@ -1,3 +1,4 @@
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import {Row, Col, Table, Button} from "react-bootstrap";
 
 function Answers (props) {
@@ -57,9 +58,9 @@ function AnswerData (props) {
 function AnswerAction (props) {
   return (
     <td>
-      <Button variant='warning'>vote up</Button>
-      <Button variant='primary'>edit</Button>
-      <Button variant='danger'>delete</Button>
+      <Button variant='warning'><i className="bi bi-arrow-up"></i></Button>
+      <Button variant='primary' className='mx-1'><i className='bi bi-pencil-square'></i></Button>
+      <Button variant='danger'><i className='bi bi-trash'></i></Button>
     </td>
   )
 }
